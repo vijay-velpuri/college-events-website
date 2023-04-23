@@ -1,0 +1,63 @@
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap');
+body {
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	color: aliceblue;
+	background-color: #272727;
+}
+header {
+	position: fixed;
+	background-color: #272727;
+	padding: 0;
+	width: 100%;
+}
+main {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+a {
+	color: burlywood;
+}
+h1, h2 {
+	color: burlywood;
+	font-size: 32px;
+}
+.navList {
+	border: 1px solid #e7e7e7;
+	background-color: #272727;
+	font-size: 24px;
+}
+.navItemLeft {
+	font-size: 32px;
+	list-style-type: none;
+	display: inline;
+	color: burlywood;
+}
+.navItemRight {
+	font-size: 28px;
+	list-style-type: none;
+	display: inline;
+	float: right;
+	margin-right: 30px;
+}
+.navLink {
+	color: burlywood;
+	padding: 10px;
+}
+.navItemRight:hover {
+	color: rgb(215, 212, 152);
+}
+.eventOdd {
+	list-style-type: none;
+	padding: 10px 10px 10px 10px;
+}
+.eventEven {
+	list-style-type: none;
+	background-color: #2d2d2d;
+	padding: 10px 10px 10px 10px;
+}
+footer {
+	color: burlywood;
+	text-align: center;
+	bottom: 0;
+}

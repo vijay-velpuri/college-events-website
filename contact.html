@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<script src="toggle.js"></script>
+	<script src="formvalidate.js"></script>
+    <title>College Events Website- Events</title>
+<body>
+    <header>
+		<nav>
+			<ul class="navList">
+				<li class="navItemLeft">College Events</li>
+				<li class="navItemRight"><a class="navLink" href="contact.html">Contact</a></li>
+				<li class="navItemRight"><a class="navLink" href="about.html">About</a></li>
+				<li class="navItemRight"><a class="navLink" href="events.html">Events</a></li>
+				<li class="navItemRight"><a class="navLink" href="home.html">Home</a></li>
+			</ul>
+		</nav>
+	</header><br><br><br><br>
+	<main>
+		<div class="container">
+			<h2>Contact Us</h2>
+			<p>Do you have a question or comment about the College Events Website? We'd love to hear from you! Please use the form below to get in touch.</p>
+			<div ng-app="myApp" ng-controller="myCtrl">
+				<form name="feedbackForm" ng-submit="submitForm()">
+				  <label>Name: <input type="text" id="name" name="name" ng-model="name" required></label>
+				  <br><br>
+				  <label>Email: <input type="email" id="email" name="email" ng-model="email" required></label>
+				  <br><br>
+				  <label>Message: <textarea id="message" name="message" ng-model="message" rows="5" required></textarea></label>
+				  <br><br>
+				  <input type="submit" value="Send">
+				</form>
+			  
+				<div ng-if="submitted">
+				  Thank you for your feedback!
+				</div>
+			  </div>
+		</div>
+	</main>
+	<footer>
+		<p>&copy; 2023 College Events Website</p>
+	</footer>
+</body>
+</html>
